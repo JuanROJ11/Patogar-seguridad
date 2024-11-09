@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa de Seguridad</title>
+    <link rel="stylesheet" href="diseno.css">
+</head>
+<body>
+    <div id="sidebar">
+        <img id="logo" src="patogar.png" alt="Logo" style="width: 400px; height: auto;">
+        <ul>
+            <li><button id="darkModeBtn">Modo Oscuro</button></li>
+            <li><button id="languageEspañolBtn">Español</button></li>
+            <li><button id="languageInglesBtn">English</button></li>
+            <li><button id="call911Btn">Llamar al 911</button></li>
+            <li><button id="supportBtn">Soporte</button></li>
+
+        </ul>
+    </div>
+
+    <div id="mainContent">
+        <h1 id="mainTitle">Seleccione el problema</h1>
+        <label for="problems" id="problemLabel">Problema:</label>
+        <select id="problems">
+            <option value="1">La chapa está rota</option>
+            <option value="2">Alguien abrió la puerta</option>
+            <option value="3">Se detectó forcejeo</option>
+            <option value="4">La chapa está fallando, puede ser un error técnico</option>
+        </select>
+
+        <p id="solutionText">Seleccione un problema para ver la solución.</p>
+        <button id="solveProblemBtn">Solucionar Problema</button>
+        <button id="resolvedBtn">Se resolvió el problema</button>
+
+        <h2 id="historyTitle">Historial de Resoluciones</h2>
+        <ul id="historyList"></ul>
+    </div>
+
+    
+    <audio id="alarmSound" src="musica.mp3"></audio>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+#sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#sidebar img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#sidebar ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+}
+
+#sidebar ul li {
+  margin: 15px 0;
+  width: 100%;
+}
+
+#sidebar button {
+  width: 100%;
+  padding: 10px;
+  background-color: #555;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+}
+
+#sidebar button:hover {
+  background-color: #777;
+}
+
+
+#mainContent {
+  margin-left: 270px;
+  padding: 30px;
+}
+
+#problemList, #solution {
+  margin-bottom: 20px;
+}
+
+#problemList select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button#solveProblemBtn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+button#solveProblemBtn:hover {
+  background-color: #218838;
+}
+
+button#resolvedBtn {
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+button#resolvedBtn:hover {
+  background-color: #e64a19;
+}
+
+
+body.dark-mode {
+  background-color: #181818;
+  color: #ddd;
+}
+
+body.dark-mode #sidebar {
+  background-color: #222;
+}
+
+body.dark-mode #sidebar button {
+  background-color: #444;
+}
+
+body.dark-mode #sidebar button:hover {
+  background-color: #666;
+}
+
+body.dark-mode #mainContent {
+  background-color: #222;
+}
+
+body.dark-mode h1, body.dark-mode h2 {
+  color: #ddd;
+}
+
+
+#solution p {
+  font-size: 18px;
+  color: #555;
+}
+
+
+audio {
+  display: none;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
